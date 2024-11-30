@@ -1,0 +1,38 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin: 20px;
+  text-align: center;
+}
+
+/* body {
+  height: 100vh;
+  background-color: #303030;
+} */
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+.hero-image {
+  margin-top: -10%;
+}
+
+header {
+  color: white !important;
+}
+
+.nav-link {
+  color: white !important;
+}
+
+.btn-primary {
+  width: 9rem;
+  height: 3rem;
+  background-color: #202020 !important;
+  border: none !important;
+  &:hover {
+    background-color: #131313 !important;
+  }
+}
