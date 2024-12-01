@@ -15,7 +15,7 @@ function ShopPage() {
             <img src={logo} alt="" className="img-fluid" width={150} />
           </a>
           <button
-            className="navbar-toggler"
+            className="navbar-toggler collapsed"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent"
@@ -45,7 +45,6 @@ function ShopPage() {
           </div>
         </div>
       </nav>
-      <h1>Shop Page</h1>
       <div className="grid-container">
         {shapes.map((shape) => {
           return (

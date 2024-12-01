@@ -27,7 +27,8 @@
 
 .shape-showcase .shape-showcase-card:hover {
   transition: 0.5s ease-out;
-  transform: scale(1.01);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(255, 255, 255, 0.3) 0px 8px 16px -8px;
 }
 
 .shape-showcase .shape-showcase-card::before {
@@ -165,4 +166,155 @@
   .shape-showcase-button {
   top: -1px;
   opacity: 1;
+}
+.btn-primary {
+  width: 9rem;
+  height: 3rem;
+  background: #202020 !important;
+  border: none !important;
+  &:hover {
+    background: #54565d !important;
+  }
+}
+
+@media screen and (max-width: 760px) {
+
+  .shape-showcase .shape-showcase-card {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    width: 300px;
+    height: 450px;
+    background: #5e5f5f;
+    border-radius: 30px;
+    overflow: hidden;
+  }
+  
+  .shape-showcase .shape-showcase-card:hover {
+    transition: 0.5s ease-out;
+    transform: scale(1.01);
+  }
+  
+  .shape-showcase .shape-showcase-card::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    width: 100%;
+    height: 100%;
+    background: #54565d;
+    transform: skewY(-20deg);
+    transition: 0.5s;
+  }
+  
+  .shape-showcase .shape-showcase-card:hover::before {
+    top: -75%;
+    transform: skewY(45deg);
+  }
+  
+  .shape-showcase .shape-showcase-card::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-weight: 600;
+    font-size: 4em;
+  }
+  
+  .shape-showcase .shape-showcase-card .shape-showcase-image-card {
+    position: relative;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+  }
+  
+  .shape-showcase .shape-showcase-card .shape-showcase-image-card .shape-showcase-image {
+    height: 250px;
+    width: auto;
+    transition: 0.3s;
+    margin-left: 0px;
+  }
+  
+  .shape-showcase .shape-showcase-card .shape-showcase-info-card {
+    position: relative;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 2;
+    padding-left: 0px;
+  }
+  
+  .shape-showcase .shape-showcase-card .shape-showcase-info-card .shape-showcase-title {
+    position: relative;
+    top: 20px;
+    font-size: 20px;
+    color: #eaeeeb;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.1px;
+    transition: 0.5s;
+  }
+  
+  .shape-showcase .shape-showcase-card .shape-showcase-info-card .shape-showcase-description {
+    position: relative;
+    top: 20px;
+    font-size: 15px;
+    color: #eaeeeb;
+    text-transform: uppercase;
+    transition: 0.5s;
+  }
+  
+  .shape-showcase .shape-showcase-card .shape-showcase-info-card .shape-showcase-price {
+    position: relative;
+    top: 20px;
+    font-size: 19px;
+    color: #cccecd;
+    font-weight: 700;
+    letter-spacing: 1px;
+    transition: 0.5s;
+  }
+  
+  .shape-showcase .shape-showcase-card:hover .shape-showcase-info-card .shape-showcase-title {
+    top: 0px;
+  }
+  
+  .shape-showcase .shape-showcase-card:hover .shape-showcase-info-card .shape-showcase-description {
+    top: 0px;
+  }
+  
+  .shape-showcase .shape-showcase-card:hover .shape-showcase-info-card .shape-showcase-price {
+    top: 0px;
+  }
+  
+  .shape-showcase .shape-showcase-card .shape-showcase-info-card .shape-showcase-buttons {
+    display: flex;
+    width: 100%;
+    gap: 5px;
+    padding: 10px;
+  }
+  
+  .shape-showcase .shape-showcase-card .shape-showcase-info-card .shape-showcase-button {
+    width: 150px;
+    position: relative;
+    top: 100px;
+    opacity: 0;
+    color: #eaeeeb;
+    font-size: 14px !important;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+  }
+  
+  .shape-showcase .shape-showcase-card:hover .shape-showcase-info-card .shape-showcase-button {
+    top: -1px;
+    opacity: 1;
+  }
+  
 }

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./Shape.css";
 
+
 function Shape(props) {
   const navigate = useNavigate();
   const [purchased, setPurchased] = useState(props.purchased);
@@ -17,13 +18,31 @@ function Shape(props) {
 
   return (
     <div className="shape">
-    {purchased && <div className="purchased">Sold Out!</div>}
-      <h3>{props.name}</h3>
-      <img src={props.image} alt="" />
-      <p>{props.price}$</p>
-      <div className="shape-buttons">
-        <button onClick={handleViewDetails}>View Details</button>
-        <button onClick={handleBuyNow}>Buy Now</button>
+      <div className="shape-card">
+      {purchased && <div className="shape-purchased-card"><div className="shape-purchased"></div><p>Sold Out!</p></div>}
+        <div className="shape-image-card">
+          <img src={props.image} className="shape-image" />
+        </div>
+        <div className="shape-info-card">
+          <h3 className="shape-title">{props.name}</h3>
+          <h2 className="shape-price">
+            {props.price}.<small>00</small> €{" "}
+          </h2>
+          <div className="shape-buttons">
+            <button
+              className="shape-button btn btn-primary"
+              onClick={handleViewDetails}
+            >
+              View Details
+            </button>
+            <button
+              className="shape-button btn btn-primary"
+              onClick={handleBuyNow}
+            >
+              Buy Now
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   );
