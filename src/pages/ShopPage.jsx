@@ -29,7 +29,7 @@ function ShopPage() {
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
               <li className="nav-item">
                 <a
-                  className="nav-link active fw-bold"
+                  className="nav-link"
                   aria-current="page"
                   href="/"
                 >
@@ -37,7 +37,7 @@ function ShopPage() {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/shop">
+                <a className="nav-link  active fw-bold" href="/shop">
                   Shop
                 </a>
               </li>
