@@ -17,6 +17,7 @@ header {
 
 .nav-link {
   color: white !important;
+  cursor: pointer !important;
 }
 
 .btn-primary {
