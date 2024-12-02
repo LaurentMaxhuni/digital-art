@@ -41,7 +41,7 @@ function LandingPage() {
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="/shop" onClick={() => navigate("/shop")}>
+                  <a className="nav-link" onClick={() => navigate("/shop")}>
                     Shop
                   </a>
                 </li>
