@@ -70,7 +70,7 @@ header {
 .navbar-dark .navbar-toggler-icon,
 .navbar-dark .navbar-toggler-icon::before,
 .navbar-dark .navbar-toggler-icon::after {
-  background-color: #202020 !important;;
+  background-color: #202020 !important;
 }
 
 .navbar-toggler:not(.collapsed) .navbar-toggler-icon {
@@ -83,4 +83,17 @@ header {
 
 .navbar-toggler:not(.collapsed) .navbar-toggler-icon::after {
   transform: rotate(-90deg) translateX(7px);
+}
+
+.btn-landing {
+  background-color: #5e5f5f !important;
+  border: none !important;
+  color: white !important;
+  width: 9rem;
+  height: 3rem;
+  font-size: 18px;
+  padding: 8px;
+  &:hover {
+    background-color: #54565d !important;
+  }
 }

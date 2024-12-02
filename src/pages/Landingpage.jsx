@@ -41,7 +41,7 @@ function LandingPage() {
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="/shop">
+                  <a className="nav-link" href="/shop" onClick={() => navigate("/shop")}>
                     Shop
                   </a>
                 </li>
@@ -66,7 +66,7 @@ function LandingPage() {
                 </p>
                 <button
                   onClick={() => navigate("/shop")}
-                  className="btn btn-primary"
+                  className="btn btn-landing"
                 >
                   Shop Now
                 </button>
